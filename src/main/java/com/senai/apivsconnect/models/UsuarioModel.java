@@ -4,14 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.UUID;
-import org.springframework.core.serializer.Serializer;
 import java.io.Serial;
+import java.io.Serializable;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "tb_usuarios")
-public class UsuarioModel implements Serializer {
+public class UsuarioModel implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
     @Id
