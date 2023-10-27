@@ -32,4 +32,6 @@ public class UsuarioModel implements Serializable {
     private String cep;
     @Column(name = "tipo_usuario")
     private String tipoUsuario;
+    @Column(name = "url_img")
+    private String urlImg;
 }
